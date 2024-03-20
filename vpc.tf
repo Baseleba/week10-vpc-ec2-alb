@@ -137,12 +137,12 @@ resource "aws_route_table_association" "rta2" {
 
 resource "aws_route_table_association" "rta3" {
     subnet_id = aws_subnet.Public_1.id
-    route_table_id = aws_route_table.rtprivate.id
+    route_table_id = aws_route_table.rtpublic.id
   
 }
 
 resource "aws_route_table_association" "rta4" {
     subnet_id = aws_subnet.Public_2.id
-    route_table_id = aws_route_table.rtprivate.id
+    route_table_id = aws_route_table.rtpublic.id
   
 }

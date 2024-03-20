@@ -10,7 +10,7 @@ resource "aws_lb_target_group" "alb-target-group" {
     interval            = 10
     matcher             = 200
     path                = "/"
-    port                = "traffic-port"
+    port                = 80
     protocol            = "HTTP"
     timeout             = 6
     unhealthy_threshold = 3
