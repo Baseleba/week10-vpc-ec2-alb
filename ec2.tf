@@ -18,7 +18,7 @@ resource "aws_instance" "server2" {
     subnet_id = aws_subnet.Private_2.id
     user_data = file("code.sh")
     tags = {
-      Name = "Webserver-2"
+      Name = "Webserver-3"
 
     }
 }
